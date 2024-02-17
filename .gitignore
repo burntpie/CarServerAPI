@@ -404,3 +404,8 @@ CarServiceAPI.http
 CarServiceAPI.sln
 CarServiceAPI.csproj
 ./Properties/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

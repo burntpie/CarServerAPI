@@ -1,3 +1,5 @@
+namespace CarServiceAPI.Models;
+
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 

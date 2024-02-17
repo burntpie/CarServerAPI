@@ -1,4 +1,7 @@
+namespace CarServiceAPI.Services;
+
 using System.Collections.Generic;
+using CarServiceAPI.Models;
 
 public interface ICarModelService
 {
