@@ -396,3 +396,11 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+appsettings.json
+appsettings.Development.json
+CarServiceAPI.http
+CarServiceAPI.sln
+CarServiceAPI.csproj
+./Properties/
