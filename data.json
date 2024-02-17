@@ -1,0 +1,102 @@
+[
+  {
+    "id": "64f9a012-ce06-4686-a9a8-4e7cea9c753d",
+    "make": "Toyota",
+    "runs_on": "petrol"
+  },
+  {
+    "id": "2accdaa8-65f7-4118-a42d-918cde5b103d",
+    "make": "Ford",
+    "runs_on": "diesel"
+  },
+  {
+    "id": "322ee4cb-cc78-485b-938e-ed3f74be8691",
+    "make": "Chevrolet",
+    "runs_on": "electric"
+  },
+  {
+    "id": "a70f3449-4375-4225-b9df-fac7c625a574",
+    "make": "Honda",
+    "runs_on": "petrol"
+  },
+  {
+    "id": "36411700-4c20-4aeb-9334-98623a36ad1d",
+    "make": "Mercedes-Benz",
+    "runs_on": "diesel"
+  },
+  {
+    "id": "43d5fa17-efbe-4188-a89e-18814485e236",
+    "make": "BMW",
+    "runs_on": "electric"
+  },
+  {
+    "id": "cd60afce-b760-4605-a403-fd279751f17a",
+    "make": "Audi",
+    "runs_on": "petrol"
+  },
+  {
+    "id": "a8d2d9e0-defc-42c2-af7b-54fca292eb8d",
+    "make": "Tesla",
+    "runs_on": "diesel"
+  },
+  {
+    "id": "aa81fdf5-c566-451a-ab4b-0c22a42454d8",
+    "make": "Nissan",
+    "runs_on": "electric"
+  },
+  {
+    "id": "fc477d19-7a1e-4436-b9b5-1c3839947e7f",
+    "make": "Hyundai",
+    "runs_on": "petrol"
+  },
+  {
+    "id": "08b7c3cc-2dc9-4b98-afc3-374760044af6",
+    "make": "Toyota",
+    "runs_on": "diesel"
+  },
+  {
+    "id": "b7e0ef49-889a-4873-9328-83f90985c34c",
+    "make": "Ford",
+    "runs_on": "electric"
+  },
+  {
+    "id": "f3610036-ba8b-4e80-ad89-815717ea0ca3",
+    "make": "Chevrolet",
+    "runs_on": "petrol"
+  },
+  {
+    "id": "aec7a203-1519-4104-b223-9b8c5d5b24d8",
+    "make": "Honda",
+    "runs_on": "diesel"
+  },
+  {
+    "id": "841095c9-4f2c-4863-840e-99a120d13fb4",
+    "make": "Mercedes-Benz",
+    "runs_on": "electric"
+  },
+  {
+    "id": "7df1adbe-2f42-403d-bfb1-09f8d0036f26",
+    "make": "BMW",
+    "runs_on": "petrol"
+  },
+  {
+    "id": "85f0fc92-22a0-4d29-b483-adfbfc65794f",
+    "make": "Audi",
+    "runs_on": "diesel"
+  },
+  {
+    "id": "bebc8503-f27f-4dd6-ad0f-216bb5d96329",
+    "make": "Tesla",
+    "runs_on": "electric"
+  },
+  {
+    "id": "c7d3c695-50d0-47ff-b304-eb4bf15ca20e",
+    "make": "Nissan",
+    "runs_on": "petrol"
+  },
+  {
+    "id": "abf503dc-6639-4b3f-b2d7-4bcc1da19207",
+    "make": "Hyundai",
+    "runs_on": "diesel"
+  }
+]
