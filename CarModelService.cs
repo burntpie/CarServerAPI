@@ -9,7 +9,7 @@ public class CarModelService : ICarModelService
 
     public CarModelService()
     {
-        // Load the car models from the JSON file
+        // Load the car models from the data.json file
         string jsonFilePath = "data.json";
         string json = File.ReadAllText(jsonFilePath);
         _carModels = JsonConvert.DeserializeObject<List<CarModel>>(json);
