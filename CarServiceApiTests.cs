@@ -15,7 +15,7 @@ public class CarServiceApiTests : IClassFixture<CustomWebApplicationFactory<CarS
     {
         _client = factory.WithWebHostBuilder(builder =>
         {
-            // Here you can modify the builder if necessary, for example, to add test-specific services or configuration
+            // add test-specific services or configuration
         }).CreateClient();
     }
 
@@ -51,8 +51,8 @@ public class CarServiceApiTests : IClassFixture<CustomWebApplicationFactory<CarS
         var carModels = JsonConvert.DeserializeObject<List<CarModel>>(responseString);
 
         Assert.NotNull(carModels);
-        Assert.True(carModels.Count > 0); // Assuming there are car models in your test setup
-                                          // Optionally, further assert on the contents of carModels to match expected values
+        Assert.True(carModels.Count > 0); // Assert that there are car models returned
+                                          
     }
 
     [Fact]

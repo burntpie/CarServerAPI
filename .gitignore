@@ -409,3 +409,4 @@ CarServiceAPI.csproj
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+aws-beanstalk-tools-defaults.json

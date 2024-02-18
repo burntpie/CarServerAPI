@@ -1,11 +1,10 @@
-﻿namespace CarServiceAPI;
-
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 using System.IO;
-using System.Reflection;
+
+namespace CarServiceAPI;
 
 public class CustomWebApplicationFactory<TEntryPoint> : WebApplicationFactory<TEntryPoint> where TEntryPoint : class
 {
@@ -13,24 +12,17 @@ public class CustomWebApplicationFactory<TEntryPoint> : WebApplicationFactory<TE
     {
         builder.ConfigureAppConfiguration((context, configBuilder) =>
         {
-            // Adjust the path as necessary to point to your project's root directory
+            // Adjust the configuration for testing
             var projectDir = Directory.GetCurrentDirectory();
-            var configPath = Path.Combine(projectDir, "appsettings.json");
-
-            configBuilder.AddJsonFile(configPath);
+            configBuilder.AddJsonFile(Path.Combine(projectDir, "appsettings.json"), optional: false);
+            configBuilder.AddJsonFile("data.json", optional: false, reloadOnChange: false);
         });
+
+        builder.UseStartup<TestStartup>(); // Use TestStartup instead of the default Startup class
 
         builder.ConfigureServices(services =>
         {
-            // Here you can remove or replace services for testing purposes
-            // For example, to use an in-memory database instead of the real one
-        });
-
-        builder.ConfigureAppConfiguration((_, config) =>
-        {
-            var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            config.AddJsonFile(Path.Combine(path, "data.json"), optional: false, reloadOnChange: false);
+            // Optionally replace services with mocks or other test-specific implementations
         });
     }
 }
-

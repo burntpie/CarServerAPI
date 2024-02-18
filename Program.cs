@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddHealthChecks();
 builder.Services.AddSingleton<ICarModelService, CarModelService>();
 
-// Register the Swagger generator, defining one or more Swagger documents
+// Register the Swagger generator, defining Swagger documents
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "CarServiceAPI", Version = "v1" });
@@ -32,9 +32,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "CarServiceAPI");
-
-        // Set the Swagger UI at the app's root
-        // c.RoutePrefix = string.Empty; 
     });
 }
 else
@@ -44,15 +41,12 @@ else
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles(); // Enables static file serving for the application for index.html home page
 app.UseRouting();
-
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseCors(policy =>
-    policy.WithOrigins("http://example.com") // Adjust the origins as necessary
-          .AllowAnyMethod()
-          .AllowAnyHeader());
+app.UseMiddleware<RequestLoggingMiddleware>();
 
 app.UseEndpoints(endpoints =>
 {
