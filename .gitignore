@@ -398,12 +398,10 @@ FodyWeavers.xsd
 *.sln.iml
 
 
-appsettings.json
-appsettings.Development.json
 CarServiceAPI.http
 CarServiceAPI.sln
-CarServiceAPI.csproj
-./Properties/
+Properties/
+wwwroot/
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
