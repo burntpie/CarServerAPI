@@ -1,6 +1,7 @@
 # CarServerAPI
 - Backend RESTful API for managing a set of cars with unique UUIDs
-- It is built using ASP.NET Core 8.002 and deployed on cloud using AWS Elastic Beanstalk
+- Built using ASP.NET Core 8.002
+- Deployed on cloud using AWS Elastic Beanstalk
 - No database is used, the data is stored in memory
 - 'data.json' file is used to store the data in JSON format
 
